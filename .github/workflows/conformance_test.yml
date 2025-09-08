@@ -28,7 +28,7 @@ jobs:
         with:
           go-version: 1.24.5
         id: go
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
         with:
           path: src/github.com/goharbor/harbor
       - name: before_install
