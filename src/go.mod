@@ -1,6 +1,6 @@
 module github.com/goharbor/harbor/src
 
-go 1.24.5
+go 1.24.7
 
 require (
 	github.com/CloudNativeAI/model-spec v0.0.3
@@ -36,7 +36,7 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/google/go-containerregistry v0.20.2
 	github.com/google/uuid v1.6.0
-	github.com/gorilla/csrf v1.7.2
+	github.com/gorilla/csrf v1.7.3
 	github.com/gorilla/handlers v1.5.2
 	github.com/gorilla/mux v1.8.1
 	github.com/graph-gophers/dataloader v5.0.0+incompatible
