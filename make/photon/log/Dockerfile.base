@@ -5,3 +5,6 @@ RUN tdnf install -y cronie rsyslog logrotate shadow tar gzip sudo >> /dev/null\
     && groupadd -r -g 10000 syslog && useradd --no-log-init -r -g 10000 -u 10000 syslog \
     && tdnf clean all \
     && chage -M 99999 root
+
+RUN tdnf -y update glibc glibc-libs glibc-i18n \
+    && tdnf clean all

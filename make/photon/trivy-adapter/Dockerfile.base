@@ -4,3 +4,6 @@ RUN tdnf install -y rpm shadow >> /dev/null \
     && tdnf clean all \
     && groupadd -r -g 10000 scanner \
     && useradd --no-log-init -m -r -g 10000 -u 10000 scanner
+
+RUN tdnf -y update glibc glibc-libs glibc-i18n \
+    && tdnf clean all
