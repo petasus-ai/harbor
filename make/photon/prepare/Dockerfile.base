@@ -7,5 +7,4 @@ RUN pip3 install pipenv==2022.1.8
 RUN tdnf install -y rpm cpio apr-util
 RUN tdnf -y --downloadonly --downloaddir=/tmp/ install httpd && rpm2cpio /tmp/httpd-*.rpm | cpio -ivdm ./usr/bin/htpasswd && rm -f /tmp/*
 
-RUN tdnf -y update glibc glibc-libs glibc-i18n \
-    && tdnf clean all
+RUN tdnf -y update glibc glibc-libs

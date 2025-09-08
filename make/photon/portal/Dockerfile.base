@@ -7,5 +7,4 @@ RUN tdnf install -y nginx shadow >> /dev/null \
     && groupmod -g 10000 nginx && usermod -g 10000 -u 10000 -d /home/nginx -s /bin/bash nginx \
     && chown -R nginx:nginx /etc/nginx
 
-RUN tdnf -y update glibc glibc-libs glibc-i18n \
-    && tdnf clean all
+RUN tdnf -y update glibc glibc-libs
