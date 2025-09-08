@@ -74,7 +74,7 @@ PORTAL_PATH=$(BUILDPATH)/src/portal
 CHECKENVCMD=checkenv.sh
 
 # parameters
-REGISTRYSERVER=quay.io
+REGISTRYSERVER=
 REGISTRYPROJECTNAME=edgestack
 DEVFLAG=true
 TRIVYFLAG=false
@@ -90,11 +90,11 @@ GEN_TLS=
 VERSIONTAG=dev
 # for base docker image tag
 BUILD_BASE=true
-PUSHBASEIMAGE=false
+PUSHBASEIMAGE=true
 BASEIMAGETAG=dev
 BUILDBASETARGET=trivy-adapter core db jobservice log nginx portal prepare redis registry registryctl exporter
-IMAGENAMESPACE=goharbor
-BASEIMAGENAMESPACE=goharbor
+IMAGENAMESPACE=quay.io/edgestack
+BASEIMAGENAMESPACE=quay.io/edgestack
 # #input true/false only
 PULL_BASE_FROM_DOCKERHUB=true
 
