@@ -77,7 +77,7 @@ CHECKENVCMD=checkenv.sh
 REGISTRYSERVER=
 REGISTRYPROJECTNAME=edgestack
 DEVFLAG=true
-TRIVYFLAG=false
+TRIVYFLAG=true
 HTTPPROXY=
 BUILDREG=true
 BUILDTRIVYADP=true
@@ -87,11 +87,11 @@ GEN_TLS=
 
 # version prepare
 # for docker image tag
-VERSIONTAG=dev
+VERSIONTAG=v2.13.2
 # for base docker image tag
 BUILD_BASE=true
 PUSHBASEIMAGE=true
-BASEIMAGETAG=dev
+BASEIMAGETAG=v2.13.2
 BUILDBASETARGET=trivy-adapter core db jobservice log nginx portal prepare redis registry registryctl exporter
 IMAGENAMESPACE=quay.io/edgestack
 BASEIMAGENAMESPACE=quay.io/edgestack
@@ -105,8 +105,8 @@ PREPARE_VERSION_NAME=versions
 
 #versions
 REGISTRYVERSION=v2.8.3-patch-redis
-TRIVYVERSION=v0.64.1
-TRIVYADAPTERVERSION=v0.33.2
+TRIVYVERSION=v0.66.0
+TRIVYADAPTERVERSION=v0.34.0
 NODEBUILDIMAGE=node:16.18.0
 
 # version of registry for pulling the source code
